@@ -1,0 +1,155 @@
+
+<!DOCTYPE html>
+
+<html lang="en" dir="ltr">
+<head>
+<meta charset="UTF-8">
+<title>Sign Up</title>
+<style type="text/css">
+body {
+    font-family: Arial;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 50px;
+    animation: fadeIn 1.5s ease;
+    background: linear-gradient(to bottom right,#c6e6ff ,#e9d7ff);
+
+    
+   
+}
+
+
+
+body:has(#patient:checked){
+    background-image: url(karolinekamallizem.jpg);
+    box-shadow: 0,0,0 ,bisque;
+    
+    
+}
+body:has(#nextofkin:checked){
+    background-image: url(KAROLINEKAMAL\ \(2\).jpg);
+    box-shadow: 0,0,0, rosybrown;
+
+}
+
+
+
+fieldset {
+    width: 300px;
+    padding: 20px;
+    display: none;
+    border: 3px solid white;
+    background-color: #ffffffcc;
+    border-radius: 15px;
+    box-shadow: 0 0 15px rgba(0,0,0,0.2);
+    
+    margin-top: 20px;
+}
+
+input[type="text"], input[type="number"], input[type="tel"], input[type="email"] , input[type="password"]{
+    width: 100%;
+    padding: 10px;
+    margin: 8px 0;
+    border-radius: 8px;
+    border: 1px solid #777;
+}
+
+button {
+    width: 100%;
+    padding: 10px;
+    background-color: deepskyblue;
+    border: none;
+    border-radius: 8px;
+    color: white;
+    font-size: 16px;
+    cursor: pointer;
+   
+    margin-top: 10px;
+}
+input[type="radio"]{
+    background-color: bisque;
+    text-align: right;
+    margin-right: 80%;
+    display:inline;
+    background-color: deepskyblue;
+    
+
+}
+legend{
+    text-align: center;
+    padding-top: 12%;
+    
+    
+}
+
+label{
+    text-align: right;
+    margin-right: 70%;
+
+    
+    color:azure;
+    
+}
+
+
+
+#patient:checked ~   #patientforms {
+    display: block;
+    
+}
+
+#nextofkin:checked ~ #nextofkinforms {
+    display: block;
+    
+}
+
+
+</style>
+</head>
+<body>
+
+    <input type="radio" id="patient" name="gener">
+    <label for="patient"> patient</label>
+
+    <input type="radio" id="nextofkin" name="gener">
+    <label for="next of kin"> next of kin</label>
+
+<fieldset id="patientforms">
+    <legend>Patient</legend>
+    <input type="text" name="Name" placeholder="Enter name" required><br>
+    <input type="number" name="age" placeholder="Enter age" required><br>
+    <input type="text" name="email" placeholder="Enter email" required><br>
+    <input type="tel" name="tel" placeholder="Enter phone" required><br>
+    
+        <input type="password" name="password" placeholder="enter password" required>
+    <button onclick="window.location.href='sign in.html'">sign up</button>
+</fieldset>
+<fieldset id="nextofkinforms">
+    <legend>next of kin</legend>
+    <label><br/>
+    <input type="text" name="Name" placeholder="Enter name" required></label><br/>
+    <input type="email" name="email" placeholder="Enter email" required><br>
+    <label><br/>
+    <input type="tel" name="tel" placeholder="Enter phone" required></label><br/>
+    <label><br/>
+        <input type="password" name="password" placeholder="enter password" required></label><br/>
+
+    
+    <label><br/>
+            <button onclick="window.location.href='sign in.html'">sign up</button>
+
+    </fieldset>
+
+    
+
+
+
+</body>
+
+
+</html>
+<label><br/>
+    
+
+
